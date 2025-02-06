@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            grid-template-areas: 
+            "c1 c2 c3"
+            "c4 c2 c5"
+            "c6 c6 c5";
+        }
+        .container>div{
+            background-color: aquamarine;
+            /* height: 100px; */
+        }
+        .child1{
+            grid-area: c1;            
+        }
+        .child2{
+            grid-area: c2;
+            height: 200px;
+        }
+        .child3{
+           grid-area: c3;
+        }
+        .child4{
+            grid-area: c4;
+        }
+        .child5{
+            grid-area: c5;
+            height: 200px;
+        }
+        .child6{
+            grid-area: c6;
+        }
+
+        .maincontainer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            grid-template-areas: 
+            "c7 c8 c9"
+            "c7 c10 c10"
+            "c7 c11 c12";
+        }
+        .maincontainer>div{
+            background-color: rgb(180, 230, 213);
+            /* height: 100px; */
+        }
+        .child7{
+            grid-area: c7;            
+        }
+        .child8{
+            grid-area: c8;
+            height: 100px;
+        }
+        .child9{
+           grid-area: c9;
+           height: 100px;
+        }
+        .child10{
+            grid-area: c10;
+            height: 100px;
+        }
+        .child11{
+            grid-area: c11;
+            height: 100px;
+        }
+        .child12{
+            grid-area: c12;
+        }
+
+        
+        .maincontainer1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            grid-template-areas: 
+            "c13 c14 c15"
+            "c16 c14 c17"
+            "c16 c18 c18";
+        }
+        .maincontainer1>div{
+            background-color: rgb(87, 88, 88);
+        }
+        .child13{
+            grid-area: c13;   
+            height: 100px;         
+        }
+        .child14{
+            grid-area: c14;
+        }
+        .child15{
+           grid-area: c15;
+        }
+        .child16{
+            grid-area: c16;
+        }
+        .child17{
+            grid-area: c17;
+            height: 100px;
+        }
+        .child18{
+            grid-area: c18;
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>LAYOUT1</h1>
+    <div class="container">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+        <div class="child4">4</div>
+        <div class="child5">5</div>
+        <div class="child6">6</div>
+    </div>
+    
+    <hr style="margin: 40px;">
+
+     <h1>LAYOUT2</h1>
+    <div class="maincontainer">
+        <div class="child7">7</div>
+        <div class="child8">8</div>
+        <div class="child9">9</div>
+        <div class="child10">10</div>
+        <div class="child11">11</div>
+        <div class="child612">12</div>
+    </div>
+
+    <hr style="margin: 40px;">
+    
+     <h1>LAYOUT3</h1>
+    <div class="maincontainer1">
+        <div class="child13">13</div>
+        <div class="child14">14</div>
+        <div class="child15">15</div>
+        <div class="child16">16</div>
+        <div class="child17">17</div>
+        <div class="child18">18</div>
+    </div>
+
+</body>
+</html>
